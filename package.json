@@ -1,0 +1,22 @@
+{
+  "name": "sailing",
+  "version": "1.0.0",
+  "description": "A review game for the chemistry classroom.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwmay/sailing.git"
+  },
+  "author": "Joseph W. May (@docmayscience)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwmay/sailing/issues"
+  },
+  "homepage": "https://github.com/jwmay/sailing#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
