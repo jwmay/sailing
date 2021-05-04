@@ -1,0 +1,35 @@
+/**
+ * title.scss
+ */
+
+/**
+ * Applies font and color styles for
+ * displaying the app title.
+ */
+@mixin title($font-size) {
+  font-size: $font-size;
+  font-family: $font-family-header;
+  color: $color-peach;
+}
+
+.title-container {
+  @include modal(-10, $color-teal-light, 0.70);
+  
+  .title-box {
+    @include modalContent(30%, 60%);
+    cursor: pointer;
+    
+    .title {
+      @include title(4.75rem);
+      font-size: calc(24px + (76 - 24) * ((100vw - 480px) / (1600 - 480)));
+      
+      span {
+        font-family: $font-family-body;
+        font-size: calc(14px + (56 - 14) * ((100vw - 480px) / (1600 - 480)));
+        text-transform: lowercase;
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+  }
+}

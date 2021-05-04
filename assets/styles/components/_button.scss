@@ -1,0 +1,28 @@
+/**
+ * button.scss
+ */
+
+/**
+ * Creates a button
+ */
+@mixin button() {
+  padding: 14px 28px;
+  border: 4px solid $color-teal-dark;
+  color: $color-teal-dark;
+  font-size: 1.6rem;
+  font-family: 'ABeeZee', sans-serif;
+  text-transform: lowercase;
+  background-color: $color-coral;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  
+  &:hover {
+    color: $color-coral;
+    border-color: $color-coral;
+    background-color: $color-teal-dark;
+  }
+}
+
+.btn {
+  @include button();
+}

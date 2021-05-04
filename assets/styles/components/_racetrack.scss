@@ -1,0 +1,86 @@
+/**
+ * racetrack.scss
+ */
+
+.racetrack {
+  height: 100%;
+  
+  .racetrack-container {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+  
+  .track {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    padding: 0px 36px;
+    
+    &:nth-child(odd) {
+      background-color: rgba($color-teal-dark, $opacity-track);
+      
+      &:hover {
+        background-color: rgba($color-teal-dark, $opacity-track-hover);
+      }
+    }
+    
+    &:nth-child(even) {
+      background-color: rgba($color-teal-light, $opacity-track);
+      
+      &:hover {
+        background-color: rgba($color-teal-light, $opacity-track-hover);
+      }
+    }
+    
+    &:first-of-type {
+      margin-top: 69px;
+    }
+    
+    .track-title {
+      position: absolute;
+      font-family: $font-family-body;
+      font-style: italic;
+      font-weight: 400;
+      color: lighten($color-teal-light, 25%);
+      opacity: 0.5;
+      z-index: 1;
+      text-transform: uppercase;
+    }
+    
+    .marker {
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+      color: $color-coral;
+      border-radius: 100%;
+      border: 3px solid $color-coral;
+      text-align: center;
+      font-family: $font-family-body;
+      
+      &:hover {
+        background-color: rgba($color-peach, 0.35);
+      }
+      
+      &.active {
+        position: relative;
+        z-index: 2;
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/930851/sailboatMarker.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: none;
+        border-radius: 0;
+        color: transparent;
+        
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  
+}

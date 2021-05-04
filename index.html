@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>⛵ Sailing!</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee:400i|Lobster&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/88b22d5a27.js"></script>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/sailing.processed.css">
+</head>
+<body>
+  
+  <div class="background-water">
+  
+    <div class="title-container">
+      <div class="title-box">
+        <div class="title">
+          ⛵ Sailing Review Game ⛵<br>
+          <span>Click to begin</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header hidden">
+      <div class="header-container">
+        <div class="title">
+          ⛵ Sailing Review Game ⛵
+        </div>
+        <div class="button-bar">
+          <div class="menu-button" id="resetTrigger">
+            <i class="fas fa-undo" title="reset"></i>
+          </div>
+          <div class="menu-button" id="namesTrigger">
+            <i class="fas fa-users beta" title="names"></i>
+          </div>
+          <div class="menu-button" id="settingsTrigger">
+            <i class="fas fa-cog" title="settings"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="settings" id="settings">
+      <div class="settings-content">
+        <h1>Settings</h1>
+        <div class="settings-input">
+          <div class="input-label">Number of groups</div>
+          <div class="input">
+            <select name="groups" id="groups" class="select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9" selected>9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        </div>
+        <div class="settings-input">
+          <div class="input-label">Number of questions</div>
+          <div class="input">
+            <select name="questions" id="questions" class="select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15" selected>15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="close btn" data-target="settings">save</button>
+      </div>
+    </div>
+    
+    <div class="names beta" id="names">
+      <div class="names-content">
+        <h1>Team Names</h1>
+        <div class="name-inputs"></div>
+        <button type="submit" class="close btn" data-target="names">save</button>
+      </div>
+    </div>
+
+    <div class="racetrack hidden">
+      <div class="racetrack-container"></div>
+    </div>
+    
+  </div><!-- .background-water -->
+  
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/scripts/sailing.js"></script>
+</body>
+</html>

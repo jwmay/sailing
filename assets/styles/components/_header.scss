@@ -1,0 +1,49 @@
+/**
+ * header.scss
+ */
+
+.header {
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.65;
+  
+  &.active {
+    background-color: $color-teal-dark;
+    box-shadow: 0px 12px 35px 8px rgba(0,0,0,0.5);
+    opacity: 1;
+  }
+
+  .header-container {
+    color: $color-peach;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 36px;
+
+    .title {
+      @include title($font-size-header);
+      display: flex;
+      align-items: center;
+      
+      @media screen and (max-width: 480px) {
+        font-size: 12px;
+      }
+    }
+    
+    .button-bar {
+      display: flex;
+    }
+    
+    .menu-button {
+      margin-left: 30px;
+      transition: transform 0.4s ease-in-out;
+      font-size: $font-size-header;
+      cursor: pointer;
+      
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

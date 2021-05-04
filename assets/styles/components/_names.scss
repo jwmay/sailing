@@ -1,0 +1,57 @@
+/**
+ * names.scss
+ */
+
+.names {
+  @include modal(10, $color-teal-light, 0.9);
+  display: none;
+  
+  .names-content {
+    @include modalContent(440px, 440px);
+    display: block;
+    font-family: $font-family-body;
+    font-size: 1.2rem;
+    color: $color-peach;
+    position: relative;
+    z-index: 100;
+    overflow-y: scroll;
+    
+    h1 {
+      font-size: 3rem;
+    }
+    
+    button {
+      margin: 28px 0;
+    }
+  }
+  
+  .name-inputs {
+    width: 100%;
+    
+    input {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      color: $color-peach;
+      font-family: $font-family-body;
+      font-style: italic;
+      font-weight: 400;
+      background-color: rgba($color-teal-dark, 0.4);
+      border: none;
+      transition: all 0.2s ease;
+      text-align: center;
+      border-radius: 0;
+      box-sizing: border-box;
+      
+      &:nth-child(even) {
+        background-color: rgba($color-teal-dark, 0.2);
+      }
+      
+      &:focus {
+        outline: none;
+        background-color: $color-peach;
+        color: $color-teal-dark;
+      }
+    }
+  }
+}

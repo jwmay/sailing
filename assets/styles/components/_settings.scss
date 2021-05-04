@@ -1,0 +1,42 @@
+/**
+ * settings.scss
+ */
+
+.settings {
+  @include modal(10, $color-teal-light, 0.9);
+  display: none;
+  
+  .settings-content {
+    @include modalContent(440px, 440px);
+    flex-flow: column nowrap;
+    font-family: $font-family-body;
+    font-size: 1.2rem;
+    color: $color-peach;
+    position: relative;
+    z-index: 100;
+    
+    h1 {
+      font-size: 3rem;
+    }
+    
+    button {
+      margin-top: 28px;
+    }
+  }
+  
+  .settings-input {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    padding: 14px;
+    
+    .input-label,
+    .input {
+      flex: 1;
+    }
+    
+    .select {
+      width: 60%;
+    }
+  }
+}
